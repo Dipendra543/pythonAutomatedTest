@@ -1,4 +1,4 @@
 language: python
 python:
  - "2.7"
-script: python -v -rs testCalc.py
+script: python -v testCalc.py
