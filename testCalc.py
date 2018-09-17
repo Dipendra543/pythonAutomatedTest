@@ -29,5 +29,6 @@ class TestCalc(unittest.TestCase):
             calc.divide(10, 0)'''
 
 
-if __name__ == '__main__':
-    unittest.main()
+suite = unittest.TestLoader().loadTestsFromTestCase(TestStringMethods)
+unittest.TextTestRunner(verbosity=2).run(suite)
+
