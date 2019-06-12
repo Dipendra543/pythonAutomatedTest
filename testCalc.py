@@ -33,6 +33,10 @@ class TestCalc(unittest.TestCase):
 
         '''with self.assertRaises(ValueError):
             calc.divide(10, 0)'''
+    def test_cube(self):
+	self.assertEqual(calc.cube(2),8)
+	self.assertEqual(calc.cube(4),64)
+
 
 
 if __name__ == '__main__':
