@@ -27,9 +27,9 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-1, -1), 1)
         self.assertEqual(calc.divide(5, 2), 2.5)
 		
-	def test_square(self):
-		self.assertEqual(calc.square(2),4)
-		self.assertEqual(calc.square(9),81)
+    def test_square(self):
+	self.assertEqual(calc.square(2),4)
+	self.assertEqual(calc.square(9),81)
 
         '''with self.assertRaises(ValueError):
             calc.divide(10, 0)'''
